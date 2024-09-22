@@ -3,16 +3,16 @@
  */
 class FizzBuzz {
 
-    public static void main(String[] args) {
+    public static void main(int i) {
 
-        int i = 0;
         while (i<100) {
 
-            i = doFizzBuzz(i);
+            doFizzBuzz(i);
+            i++;
         }
      }
 
-    private static int doFizzBuzz(int i) {
+    static int doFizzBuzz(int i) {
         // Find out which numbers divide i.
 
         boolean divisibleBy3 = i % 3 == 0;
@@ -36,8 +36,6 @@ class FizzBuzz {
             System.out.println(i);
 
         }
-
-        i++;
         return i;
     }
 }
